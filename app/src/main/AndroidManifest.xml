@@ -1,0 +1,85 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eoldsolutions.quinielavirtualandroid.presentation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk tools:overrideLibrary="com.hannesdorfmann.mosby, com.hannesdorfmann.mosby.mvp" />
+
+    <application
+        android:name="com.eoldsolutions.quinielavirtualandroid.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5d66b68d00d90131171011bb6359f60a7cdae3a3" />
+
+        <activity
+            android:name="com.eoldsolutions.quinielavirtualandroid.presentation.view.impl.activity.StartActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.eoldsolutions.quinielavirtualandroid.presentation.view.impl.activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.eoldsolutions.quinielavirtualandroid.presentation.view.impl.activity.TutorialActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.eoldsolutions.quinielavirtualandroid.presentation.view.impl.activity.LogInActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.eoldsolutions.quinielavirtualandroid.presentation.view.impl.activity.ForgotActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--Social Network-->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.eoldsolutions.quinielavirtualandroid.presentation.notification.NotificationBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.marcohc.android.clean.architecture" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.eoldsolutions.quinielavirtualandroid.presentation.notification.NotificationIntentService" />
+    </application>
+</manifest>

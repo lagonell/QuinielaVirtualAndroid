@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App -->
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="accent">#FF6F00</color>
+    <color name="dark_blue_button">#1A237E</color>
+    <color name="list_item_selected">#86b9bf</color>
+    <color name="dark_gray">#ff515658</color>
+    <color name="black">#000000</color>
+    <color name="black_overlay">#455A64</color>
+
+    <!-- AppMsg -->
+    <color name="alert">#E56248</color>
+    <color name="confirm">#2A99BC</color>
+    <color name="info">#1E90FF</color>
+
+</resources>

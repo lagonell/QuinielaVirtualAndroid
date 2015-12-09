@@ -1,0 +1,37 @@
+<resources>
+    <string name="see_tutorial">Ver tutorial</string>
+    <string name="my_profile">Mi perfil</string>
+    <string name="ok">OK</string>
+    <string name="password">Contraseña</string>
+    <string name="accept">Aceptar</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="you">Tu</string>
+    <string name="cancel">Cancelar</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="log_out">Cerrar sessión</string>
+    <string name="log_in">Iniciar sessión</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="loading">Cargando…</string>
+    <string name="open">Abrir</string>
+    <string name="close">Cerrar</string>
+    <string name="log_out_question">¿Quieres salir?</string>
+    <string name="username">Usuario</string>
+    <string name="users">Usuarios</string>
+    <string name="no_users">No usuarios</string>
+    <string name="skip_tutorial">saltar el tutorial!</string>
+    <string name="tutorial_1">This is the first sample text, do you like it?</string>
+    <string name="tutorial_2">And now it comes the second one! Wow, awesome!</string>
+    <string name="tutorial_3">I never liked the third text, just ignore it…</string>
+    <string name="tutorial_4">And finally, the last one, hope you enjoyed it!</string>
+
+    <!--View Login-->
+    <string name="log_text_or">or</string>
+    <string name="email">Correo</string>
+    <string name="forgot_password">¿Olvido su contraseña?</string>
+
+    <!--Social network-->
+    <string name="action_cancelled">acción cancelada por el usuario.</string>
+    <!--Facebook String-->
+</resources>
